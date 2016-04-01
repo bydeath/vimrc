@@ -1,0 +1,3 @@
+[submodule "bundle/ycm"]
+	path = bundle/ycm
+	url = git@github.com:Valloric/YouCompleteMe.git
