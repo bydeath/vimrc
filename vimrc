@@ -1,6 +1,6 @@
-" -----------------   Author: Ruchee 
-" -----------------    Email: bruc14@163.com 
-" -----------------     Date: 2014-09-05 09:52
+" -----------------   Author: bruc
+" -----------------   Email: bruc14@163.com 
+" -----------------   Date: 2014-09-05 09:52
 
 
 
@@ -259,7 +259,7 @@ set backspace=2              " 设置退格键可用
 set autoindent               " 自动对齐
 set ai!                      " 设置自动缩进
 set smartindent              " 智能自动缩进
-set relativenumber           " 开启相对行号
+" set relativenumber           " 开启相对行号
 set nu!                      " 显示行号
 set mouse=a                  " 启用鼠标
 set ruler                    " 右下角显示光标位置的状态行
@@ -334,7 +334,6 @@ endif
 :inoremap ' ''<ESC>i
 :inoremap ` ``<ESC>i
 
-:inoremap = =<ESC>i <ESC>wa 
 :inoremap + +<ESC>i <ESC>wa 
 :inoremap - -<ESC>i <ESC>wa 
 :inoremap < <<ESC>i <ESC>wa 
@@ -899,3 +898,12 @@ endfunction
         " :let n=search("研究所","W")
     " endwhile
 " endfunction
+
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"

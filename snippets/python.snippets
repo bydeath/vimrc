@@ -29,13 +29,13 @@ snippet u       Unicode字符串
 	u'${0}'
 # 类、函数定义
 snippet cl      类定义 [不带括号]
-	class ${1:cl_name}:
+	class ${1:cl_name}(object):
 	    ${0}
 snippet cl.     类定义 [带括号]
 	class ${1:cl_name} (${2}):
 	    ${0}
 snippet d       函数定义 [不带self]
-	def ${1:f_name} (${2}):
+	def ${1:f_name}(${2}):
 	    ${0}
 snippet ds      方法定义 [带self]
 	def ${1:f_name} (self${2}):
@@ -106,6 +106,3 @@ snippet _       __xxx__
 snippet ifm     作为独立程序运行
 	if __name__ == '__main__':
 	    ${0}
-
-snippet =
-	 = 
