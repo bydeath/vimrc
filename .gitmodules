@@ -10,3 +10,9 @@
 [submodule "bundle/flake8"]
 	path = bundle/flake8
 	url = git@github.com:nvie/vim-flake8.git
+[submodule "bundle/vim-html5"]
+	path = bundle/vim-html5
+	url = https://github.com/othree/html5.vim
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
