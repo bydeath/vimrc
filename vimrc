@@ -1,5 +1,5 @@
 " -----------------   Author: bruc
-" -----------------   Email: bruc14@163.com 
+" -----------------   Email: brucvv@gmail.com 
 " -----------------   Date: 2014-09-05 09:52
 
 
@@ -538,9 +538,8 @@ let g:snipMate.scope_aliases['xhtml']      = 'html'
 let NERDSpaceDelims = 1                        " 自动添加前置空格
 
 " AuthorInfoDetect    自动添加作者、时间等信息，本质是NERD_commenter && authorinfo的结合
-let g:vimrc_author   = 'bruc14'                " 昵称
-let g:vimrc_email    = 'bruc14@163.com'         " 邮箱
-let g:vimrc_homepage = 'https://github.com/bydeath' " 个人主页
+let g:vimrc_author   = 'brucvv'                " 昵称
+let g:vimrc_email    = 'brucvv@gmail.com'         " 邮箱
 
 " Indent_guides       显示对齐线
 let g:indent_guides_enable_on_vim_startup = 0  " 默认关闭
