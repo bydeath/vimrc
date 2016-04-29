@@ -817,7 +817,7 @@ let g:vimwiki_use_mouse       = 1       " 使用鼠标映射
 let g:vimwiki_valid_html_tags = 'p,a,img,b,i,s,u,sub,sup,br,hr,div,del,code,red,center,left,right,h1,h2,h3,h4,h5,h6,pre,code,script,style'
 " 声明可以在wiki里面使用的HTML标签
 
-let blog = {}
+" let blog = {}
 " if g:atCompany
     " if g:isWIN
         " let blog.path          = 'D:/Ruchee/Files/mysite/wiki/'
@@ -830,36 +830,36 @@ let blog = {}
         " let blog.path_html     = 'D:/Ruchee/Files/mysite/html/'
         " let blog.template_path = 'D:/Ruchee/Files/mysite/templates/'
     " else
-let blog.path          = '~/mysite/wiki/'
-let blog.path_html     = '~/mysite/html/'
-let blog.template_path = '~/mysite/templates/'
+" let blog.path          = '~/mysite/wiki/'
+" let blog.path_html     = '~/mysite/html/'
+" let blog.template_path = '~/mysite/templates/'
     " endif
 " endif
-let blog.template_default = 'site'
-let blog.template_ext     = '.html'
-let blog.auto_export      = 1
-" 声明可以在 wiki 里面高亮的程序语言，键为调用名，值为该语言在 Vim 里面实际的语法名
-let blog.nested_syntaxes  = {'Asm': 'asm', 'Clang': 'c', 'C++': 'cpp', 'Objc': 'objc', 'Dlang': 'd', 'Go': 'go', 'Rust': 'rust', 'Swift': 'swift', 'Java': 'java', 'Groovy': 'groovy', 'Scala': 'scala', 'Clojure': 'clojure', 'C#': 'cs', 'F#': 'fsharp', 'Erlang': 'erlang', 'Scheme': 'scheme', 'Racket': 'racket', 'Lisp': 'lisp', 'Ocaml': 'ocaml', 'Haskell': 'haskell', 'Lua': 'lua', 'Perl': 'perl', 'PHP': 'php', 'Python': 'python', 'Ruby': 'ruby', 'Elixir': 'elixir', 'Julia': 'julia', 'Dart': 'dart', 'Haxe': 'haxe', 'Io': 'io', 'Rlang': 'r', 'Coffee': 'coffee', 'TypeScript': 'typescript', 'LiveScript': 'ls', 'JavaScript': 'javascript', 'Bash': 'sh', 'Sed': 'sed', 'Bat': 'dosbatch', 'Ini': 'dosini', 'HTML': 'html', 'CSS': 'css', 'Apache': 'apache', 'Nginx': 'nginx', 'Make': 'make'}
+" let blog.template_default = 'site'
+" let blog.template_ext     = '.html'
+" let blog.auto_export      = 1
+" " 声明可以在 wiki 里面高亮的程序语言，键为调用名，值为该语言在 Vim 里面实际的语法名
+" let blog.nested_syntaxes  = {'Asm': 'asm', 'Clang': 'c', 'C++': 'cpp', 'Objc': 'objc', 'Dlang': 'd', 'Go': 'go', 'Rust': 'rust', 'Swift': 'swift', 'Java': 'java', 'Groovy': 'groovy', 'Scala': 'scala', 'Clojure': 'clojure', 'C#': 'cs', 'F#': 'fsharp', 'Erlang': 'erlang', 'Scheme': 'scheme', 'Racket': 'racket', 'Lisp': 'lisp', 'Ocaml': 'ocaml', 'Haskell': 'haskell', 'Lua': 'lua', 'Perl': 'perl', 'PHP': 'php', 'Python': 'python', 'Ruby': 'ruby', 'Elixir': 'elixir', 'Julia': 'julia', 'Dart': 'dart', 'Haxe': 'haxe', 'Io': 'io', 'Rlang': 'r', 'Coffee': 'coffee', 'TypeScript': 'typescript', 'LiveScript': 'ls', 'JavaScript': 'javascript', 'Bash': 'sh', 'Sed': 'sed', 'Bat': 'dosbatch', 'Ini': 'dosini', 'HTML': 'html', 'CSS': 'css', 'Apache': 'apache', 'Nginx': 'nginx', 'Make': 'make'}
 
-let mdblog={'path': '~/mysite/mdwiki/',
-            \ 'path_html': '~/mysite/mdhtml',
-            \ 'syntax': 'markdown',
-            \ 'ext': '.md',
-            \ 'template_path': '~/mysite/templates',
-            \ 'auto_export': 1,
-            \ 'custom_wiki2html': '~/.vim/bundle/vimwiki/autoload/vimwiki/misaka_md2html.py'}
-let mdblog.nested_syntaxes  = {'Asm': 'asm', 'Clang': 'c', 'C++': 'cpp', 'Objc': 'objc', 'Dlang': 'd', 'Go': 'go', 'Rust': 'rust', 'Swift': 'swift', 'Java': 'java', 'Groovy': 'groovy', 'Scala': 'scala', 'Clojure': 'clojure', 'C#': 'cs', 'F#': 'fsharp', 'Erlang': 'erlang', 'Scheme': 'scheme', 'Racket': 'racket', 'Lisp': 'lisp', 'Ocaml': 'ocaml', 'Haskell': 'haskell', 'Lua': 'lua', 'Perl': 'perl', 'PHP': 'php', 'Python': 'python', 'Ruby': 'ruby', 'Elixir': 'elixir', 'Julia': 'julia', 'Dart': 'dart', 'Haxe': 'haxe', 'Io': 'io', 'Rlang': 'r', 'Coffee': 'coffee', 'TypeScript': 'typescript', 'LiveScript': 'ls', 'JavaScript': 'javascript', 'Bash': 'sh', 'Sed': 'sed', 'Bat': 'dosbatch', 'Ini': 'dosini', 'HTML': 'html', 'CSS': 'css', 'Apache': 'apache', 'Nginx': 'nginx', 'Make': 'make'}
-let g:vimwiki_list = [mdblog,blog]
+" let mdblog={'path': '~/mysite/mdwiki/',
+            " \ 'path_html': '~/mysite/mdhtml',
+            " \ 'syntax': 'markdown',
+            " \ 'ext': '.md',
+            " \ 'template_path': '~/mysite/templates',
+            " \ 'auto_export': 1,
+            " \ 'custom_wiki2html': '~/.vim/bundle/vimwiki/autoload/vimwiki/misaka_md2html.py'}
+" let mdblog.nested_syntaxes  = {'Asm': 'asm', 'Clang': 'c', 'C++': 'cpp', 'Objc': 'objc', 'Dlang': 'd', 'Go': 'go', 'Rust': 'rust', 'Swift': 'swift', 'Java': 'java', 'Groovy': 'groovy', 'Scala': 'scala', 'Clojure': 'clojure', 'C#': 'cs', 'F#': 'fsharp', 'Erlang': 'erlang', 'Scheme': 'scheme', 'Racket': 'racket', 'Lisp': 'lisp', 'Ocaml': 'ocaml', 'Haskell': 'haskell', 'Lua': 'lua', 'Perl': 'perl', 'PHP': 'php', 'Python': 'python', 'Ruby': 'ruby', 'Elixir': 'elixir', 'Julia': 'julia', 'Dart': 'dart', 'Haxe': 'haxe', 'Io': 'io', 'Rlang': 'r', 'Coffee': 'coffee', 'TypeScript': 'typescript', 'LiveScript': 'ls', 'JavaScript': 'javascript', 'Bash': 'sh', 'Sed': 'sed', 'Bat': 'dosbatch', 'Ini': 'dosini', 'HTML': 'html', 'CSS': 'css', 'Apache': 'apache', 'Nginx': 'nginx', 'Make': 'make'}
+" let g:vimwiki_list = [mdblog,blog]
 " let g:vimwiki_list = [{'path': '~/my_site/', 
                        " \ 'syntax': 'markdown', 'ext': '.md'}]
 " let g:vimwiki_customwiki2html = $HOME.'/.vim/autoload/vimwiki/customwiki2html.sh'
 
 
-nnoremap    <Leader>wsa          :call VWS()<CR>
-function! VWS()
-    execute ":VimwikiSearch " . input("VimwikiSearch:")
-    :lopen
-endfunction
+" nnoremap    <Leader>wsa          :call VWS()<CR>
+" function! VWS()
+    " execute ":VimwikiSearch " . input("VimwikiSearch:")
+    " :lopen
+" endfunction
 
 :nmap <leader>tt <Plug>VimwikiToggleListItem
 nmap <Leader>g :VimwikiDiaryGenerateLinks<CR>
